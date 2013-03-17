@@ -3,6 +3,7 @@
   "version": "0.1.0",
 
   "dependencies": {
+    "requirejs": "latest",
     "grunt": "~0.4",
     "grunt-bbb-server": "0.1.0-alpha"
   },
@@ -13,9 +14,7 @@
 
     "dependencies": {
       "backbone": "*",
-      "jquery": "*",
-      "lodash": "*",
-      "backbone.layoutmanager": "*"
+      "jquery": "*"
     }
   }
 }

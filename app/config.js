@@ -1,26 +1,31 @@
 // Set the require.js configuration for your application.
 require.config({
 
-  // Initialize the application with the main application file and the JamJS
-  // generated configuration file.
-  deps: ["../vendor/jam/require.config", "main"],
+	// Initialize the application with the main application file and the JamJS
+	// generated configuration file.
+	deps: [
+		"../vendor/jam/require.config",
+		"main"
+	],
 
-  paths: {
-    // Use the underscore build of Lo-Dash to minimize incompatibilities.
-    "lodash": "../vendor/jam/lodash/lodash.underscore"
+	paths: {
+		plugins: "../vendor/js/plugins",
+		vendor: "../vendor",
 
-    // Put additional paths here.
-  },
+		colResizable: "vendor/colResizable"
+	},
 
-  map: {
-    // Ensure Lo-Dash is used instead of underscore.
-    "*": { "underscore": "lodash" }
+	map: {
 
-    // Put additional maps here.
-  },
+	},
 
-  shim: {
-    // Put shims here.
-  }
-
+	shim: {
+		"app": {
+			deps: [
+				'../vendor/jam/underscore/underscore',
+				'../vendor/jam/jquery/dist/jquery',
+				'../vendor/jam/backbone/backbone'
+			]
+		}
+	}
 });
