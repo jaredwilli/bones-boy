@@ -3,6 +3,8 @@
 Backbone Boilerplate
 ====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaredwilli/bones-boy.svg)](https://greenkeeper.io/)
+
 This boilerplate is the product of much research and frustration.  Existing
 boilerplates freely modify Backbone core, lack a build process, and are very
 prescriptive; Backbone Boilerplate changes that.
